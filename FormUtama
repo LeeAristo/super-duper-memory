@@ -16,7 +16,7 @@ namespace Shortest_Job_First
         public Form1()
         {
             InitializeComponent();
-            this.Text = "Program Penjadwalan | By : Aristo";
+            this.Text = "Program Penjadwalan | By : Aristo and Nursela";
         }
 
         private void Form1_Load(object sender, EventArgs e)
