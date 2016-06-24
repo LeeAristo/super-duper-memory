@@ -183,5 +183,10 @@ namespace Shortest_Job_First
             FCFS_Fix FCFS = new FCFS_Fix();
             FCFS.Show();
         }
+        
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
