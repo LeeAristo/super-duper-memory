@@ -15,6 +15,17 @@ namespace Shortest_Job_First
         public FCFS_Fix()
         {
             InitializeComponent();
+            button3.Hide();
+            label3.Hide();
+            label2.Hide();
+            label4.Hide();
+            textBox3.Hide();
+            textBox2.Hide();
+            button2.Hide();
+            button4.Hide();
+            label5.Hide();
+            listView1.Hide();
+            listView2.Hide();
         }
         
         private void FCFS_Fix_Load(object sender, EventArgs e)
