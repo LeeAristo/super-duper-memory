@@ -105,5 +105,9 @@ namespace Shortest_Job_First
                         mulai = WaktuKedatangan[q];
                     else
                         mulai = selesai;
+                        
+                    selesai = LamaProses[q] + mulai;
+                    tunggu = mulai - WaktuKedatangan[q];
+                    TA = LamaProses[q] + tunggu;
     }
 }
