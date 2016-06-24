@@ -202,5 +202,10 @@ namespace Shortest_Job_First
                 label5.Text = "Rata-Rata TA = " + rataTA;
             }
         }
+        
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
