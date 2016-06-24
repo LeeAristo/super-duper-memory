@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Shortest_Job_First
+{
+    public partial class Pre_SJF : Form
+    {
+        public Pre_SJF()
+        {
+            InitializeComponent();
+        }
+
+        private void Pre_SJF_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
