@@ -21,5 +21,10 @@ namespace Shortest_Job_First
         {
 
         }
+        
+        int i = 0, loop = 2, pos, temp, a;
+        int jumlahTA = 0;
+        float rataTA = 0;
+        string nama = "P", stemp;
     }
 }
