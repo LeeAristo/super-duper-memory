@@ -16,6 +16,23 @@ namespace Shortest_Job_First
         {
             InitializeComponent();
             this.Text = "Round Robin";
+            button3.Hide();
+            label3.Hide();
+            label2.Hide();
+            label4.Hide();
+            textBox3.Hide();
+            textBox2.Hide();
+            button2.Hide();
+            button4.Hide();
+            label6.Hide();
+            textBox4.Hide();
+            label7.Hide();
+            label5.Hide();
+        }
+        
+        private void RoundRobin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
