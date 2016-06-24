@@ -38,5 +38,23 @@ namespace Shortest_Job_First
 
             label3.Text = "Proses ke-1";
         }
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            int jlhproses = Convert.ToInt32(textBox1.Text);
+
+            NamaProses[i] = nama + i;
+            WaktuKedatangan[i] = Convert.ToInt32(textBox3.Text);
+            LamaProses[i] = Convert.ToInt32(textBox2.Text);
+
+            if (loop > jlhproses)
+            {
+                label3.Text = "Seluruh Data Telah Dimasukkan";
+            }
+            else
+            {
+                label3.Text = "Proses ke-" + loop;
+            }
     }
 }
