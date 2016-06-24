@@ -236,5 +236,10 @@ namespace Shortest_Job_First
             RoundRobin round = new RoundRobin();
             round.Show();
         }
+        
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
