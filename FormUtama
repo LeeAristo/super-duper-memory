@@ -32,7 +32,7 @@ namespace Shortest_Job_First
         private void button4_Click(object sender, EventArgs e)
         {
             FCFS_Fix fcfs = new FCFS_Fix();
-            
+            fcfs.Show();
         }
     }
 }
