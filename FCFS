@@ -16,5 +16,10 @@ namespace Shortest_Job_First
         {
             InitializeComponent();
         }
+        
+        private void FCFS_Fix_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
