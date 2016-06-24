@@ -181,5 +181,10 @@ namespace Shortest_Job_First
             SJF sjf = new SJF();
             sjf.Show();
         }
+        
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
