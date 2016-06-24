@@ -55,5 +55,116 @@ namespace Shortest_Job_First
                 listView2.Show();
             }
         }
+        
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            
+            int jlhproses;
+            bool isNumeric = int.TryParse(textBox2.Text, out jlhproses);
+            bool isNumeric2 = int.TryParse(textBox3.Text, out jlhproses);
+            if (!string.IsNullOrEmpty(textBox2.Text) && !string.IsNullOrEmpty(textBox3.Text) && isNumeric && isNumeric2)
+            {
+                jlhproses = Convert.ToInt32(textBox1.Text);
+
+                NamaProses[i] = Convert.ToString(Convert.ToChar(i + 65));
+                WaktuKedatangan[i] = Convert.ToInt32(textBox3.Text);
+                LamaProses[i] = Convert.ToInt32(textBox2.Text);
+
+                ListViewItem data0 = new ListViewItem(NamaProses[i]);
+                data0.SubItems.Add(Convert.ToString(WaktuKedatangan[i]));
+                data0.SubItems.Add(Convert.ToString(LamaProses[i]));
+                listView2.Items.Add(data0);
+
+                textBox2.Clear();
+                textBox3.Clear();
+
+                if (loop > jlhproses)
+                {
+                    label3.Text = "Seluruh Data Telah Dimasukkan";
+                    button4.Show();
+                }
+                else
+                {
+                    label3.Text = "Proses ke-" + loop;
+                }
+
+                i += 1;
+                loop += 1;
+
+                if (loop > jlhproses + 1)
+                {
+
+                    for (int j = 0; j < jlhproses; j++)
+                    {
+                        pos = j;
+                        for (a = j + 1; a < jlhproses; a++)
+                        {
+                            if (WaktuKedatangan[a] < WaktuKedatangan[pos])
+                                pos = a;
+                        }
+
+                        temp = LamaProses[j];
+                        LamaProses[j] = LamaProses[pos];
+                        LamaProses[pos] = temp;
+
+                        temp = WaktuKedatangan[j];
+                        WaktuKedatangan[j] = WaktuKedatangan[pos];
+                        WaktuKedatangan[pos] = temp;
+
+                        stemp = NamaProses[j];
+                        NamaProses[j] = NamaProses[pos];
+                        NamaProses[pos] = stemp;
+                    }
+
+                    int mulai = WaktuKedatangan[0];
+                    int selesai = mulai + LamaProses[0];
+                    int tunggu = mulai - WaktuKedatangan[0];
+                    int TA = LamaProses[0] + tunggu;
+                    data0 = new ListViewItem(NamaProses[0]);
+                    data0.SubItems.Add(Convert.ToString(WaktuKedatangan[0]));
+                    data0.SubItems.Add(Convert.ToString(LamaProses[0]));
+                    data0.SubItems.Add(Convert.ToString(mulai));
+                    data0.SubItems.Add(Convert.ToString(selesai));
+                    data0.SubItems.Add(Convert.ToString(tunggu));
+                    data0.SubItems.Add(Convert.ToString(TA));
+                    listView1.Items.Add(data0);
+                    jumlahTA += TA;
+
+                    for (int q = 1; q < jlhproses; q++)
+                    {
+                        if (WaktuKedatangan[q] > mulai)
+                            mulai = WaktuKedatangan[q];
+                        else
+                            mulai = selesai;
+
+                        selesai = LamaProses[q] + mulai;
+                        tunggu = mulai - WaktuKedatangan[q];
+                        TA = LamaProses[q] + tunggu;
+
+                        ListViewItem data = new ListViewItem(NamaProses[q]);
+                        data.SubItems.Add(Convert.ToString(WaktuKedatangan[q]));
+                        data.SubItems.Add(Convert.ToString(LamaProses[q]));
+                        data.SubItems.Add(Convert.ToString(mulai));
+                        data.SubItems.Add(Convert.ToString(selesai));
+                        data.SubItems.Add(Convert.ToString(tunggu));
+                        data.SubItems.Add(Convert.ToString(TA));
+                        listView1.Items.Add(data);
+                        jumlahTA += TA;
+
+                    }
+
+                    button2.Hide();
+                    
+                    label2.Hide();
+                    label4.Hide();
+                    textBox3.Hide();
+                    textBox2.Hide();
+                    button2.Hide();
+                    
+                    rataTA = (float)jumlahTA / jlhproses;
+                    label5.Text = "Rata-Rata TA = " + rataTA;
+                }
+            }
+        }
     }
 }
