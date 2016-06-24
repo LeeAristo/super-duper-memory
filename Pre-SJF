@@ -56,5 +56,33 @@ namespace Shortest_Job_First
             {
                 label3.Text = "Proses ke-" + loop;
             }
+            
+            i += 1;
+            loop += 1;
+
+            if (loop > jlhproses + 1)
+            {
+
+                for (int j = 0; j < jlhproses; j++)
+                {
+                    pos = j;
+                    for (a = j + 1; a < jlhproses; a++)
+                    {
+                        if (LamaProses[a] < LamaProses[pos])
+                            pos = a;
+                    }
+
+                    temp = LamaProses[j];
+                    LamaProses[j] = LamaProses[pos];
+                    LamaProses[pos] = temp;
+
+                    temp = WaktuKedatangan[j];
+                    WaktuKedatangan[j] = WaktuKedatangan[pos];
+                    WaktuKedatangan[pos] = temp;
+
+                    stemp = NamaProses[j];
+                    NamaProses[j] = NamaProses[pos];
+                    NamaProses[pos] = stemp;
+                }
     }
 }
