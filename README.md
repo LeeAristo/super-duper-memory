@@ -1,4 +1,4 @@
 # super-duper-memory
 Pembangunan Aplikasi Perhitungan Algoritma Penjadwalan
 
-buat form fcfs
+rancang form fcfs beserta fungsinya
