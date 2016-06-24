@@ -26,5 +26,9 @@ namespace Shortest_Job_First
         int jumlahTA = 0;
         float rataTA = 0;
         string nama = "P", stemp;
+        
+        string[] NamaProses = new string[100];
+        int[] WaktuKedatangan = new int[100];
+        int[] LamaProses = new int[100];
     }
 }
