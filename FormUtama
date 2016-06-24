@@ -40,5 +40,10 @@ namespace Shortest_Job_First
             RoundRobin_Fix round = new RoundRobin_Fix();
             round.Show();
         }
+        
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Pre_SJF pre_sjf = new Pre_SJF();
+        }
     }
 }
