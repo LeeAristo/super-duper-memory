@@ -186,5 +186,10 @@ namespace Shortest_Job_First
         {
 
         }
+        
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
