@@ -1,4 +1,4 @@
 # super-duper-memory
 Pembangunan Aplikasi Perhitungan Algoritma Penjadwalan
 
-penambahan textbox TA
+pengaturan hide property
