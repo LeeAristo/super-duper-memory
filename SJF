@@ -17,6 +17,8 @@ namespace Shortest_Job_First
             InitializeComponent();
             button3.Hide();
             label3.Hide();
+            label2.Hide();
+            label4.Hide();
         }
         
         private void SJF_Load(object sender, EventArgs e)
