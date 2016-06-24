@@ -1,5 +1,5 @@
 # super-duper-memory
 Pembangunan Aplikasi Perhitungan Algoritma Penjadwalan
 
-Pembuatan form SJF
-button 3
+penambahan textbox pesan informasi
+penambahan textbox TA
