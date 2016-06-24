@@ -44,6 +44,7 @@ namespace Shortest_Job_First
         private void button5_Click(object sender, EventArgs e)
         {
             Pre_SJF pre_sjf = new Pre_SJF();
+            pre_sjf.Show();
         }
     }
 }
