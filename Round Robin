@@ -229,5 +229,12 @@ namespace Shortest_Job_First
             
             label7.Text = "Quantum = " + quantum;
         }
+        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
+            RoundRobin round = new RoundRobin();
+            round.Show();
+        }
     }
 }
