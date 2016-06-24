@@ -15,6 +15,7 @@ namespace Shortest_Job_First
         public RoundRobin()
         {
             InitializeComponent();
+            this.Text = "Round Robin";
         }
     }
 }
