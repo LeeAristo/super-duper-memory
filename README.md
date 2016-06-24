@@ -1,4 +1,4 @@
 # super-duper-memory
 Pembangunan Aplikasi Perhitungan Algoritma Penjadwalan
 
-pengaturan hide property
+buat form fcfs
