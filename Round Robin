@@ -29,5 +29,20 @@ namespace Shortest_Job_First
             label7.Hide();
             label5.Hide();
         }
+        
+        private void RoundRobin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        int i = 0, loop = 2, pos, temp, a, selesai=0, sisa=0, tunggu=0;
+        int jumlahTA = 0;
+        float rataTA = 0;
+        string stemp;
+
+        string[] NamaProses = new string[100];
+        int[] WaktuKedatangan = new int[100];
+        int[] LamaProses = new int[100];
+        int quantum = 0;
     }
 }
