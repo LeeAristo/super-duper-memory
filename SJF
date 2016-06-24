@@ -23,6 +23,9 @@ namespace Shortest_Job_First
             textBox2.Hide();
             button2.Hide();
             button4.Hide();
+            label5.Hide();
+            listView1.Hide();
+            listView2.Hide();
         }
         
         private void SJF_Load(object sender, EventArgs e)
