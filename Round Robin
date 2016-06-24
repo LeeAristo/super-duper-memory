@@ -212,5 +212,22 @@ namespace Shortest_Job_First
         {
 
         }
+        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            quantum = Convert.ToInt32(textBox4.Text);
+            button4.Hide();
+            label3.Show();
+            label2.Show();
+            label4.Show();
+            textBox3.Show();
+            textBox2.Show();
+            button2.Show();
+            label6.Hide();
+            textBox4.Hide();
+            label7.Show();
+            
+            label7.Text = "Quantum = " + quantum;
+        }
     }
 }
