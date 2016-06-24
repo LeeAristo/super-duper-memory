@@ -121,5 +121,10 @@ namespace Shortest_Job_First
                     jumlahTA += TA;
 
                 }
+                
+                rataTA = (float)jumlahTA / jlhproses;
+                label5.Text = "Rata-Rata TA = " + rataTA;
+            }
+        }
     }
 }
