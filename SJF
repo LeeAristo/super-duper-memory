@@ -164,5 +164,15 @@ namespace Shortest_Job_First
                 }
             }
         }
+        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            button3.Show();
+            label5.Show();
+            listView1.Show();
+            listView2.Hide();
+            button4.Hide();
+            label3.Hide();
+        } 
     }
 }
