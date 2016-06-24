@@ -38,7 +38,6 @@ namespace Shortest_Job_First
         private void button6_Click(object sender, EventArgs e)
         {
             RoundRobin_Fix round = new RoundRobin_Fix();
-            //RoundRobin round = new RoundRobin();
             round.Show();
         }
     }
