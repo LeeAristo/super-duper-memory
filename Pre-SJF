@@ -84,5 +84,19 @@ namespace Shortest_Job_First
                     NamaProses[j] = NamaProses[pos];
                     NamaProses[pos] = stemp;
                 }
+                
+                int mulai = WaktuKedatangan[0];
+                int selesai = mulai + LamaProses[0];
+                int tunggu = mulai - WaktuKedatangan[0];
+                int TA = LamaProses[0] + tunggu;
+                ListViewItem data0 = new ListViewItem(NamaProses[0]);
+                data0.SubItems.Add(Convert.ToString(WaktuKedatangan[0]));
+                data0.SubItems.Add(Convert.ToString(LamaProses[0]));
+                data0.SubItems.Add(Convert.ToString(mulai));
+                data0.SubItems.Add(Convert.ToString(selesai));
+                data0.SubItems.Add(Convert.ToString(tunggu));
+                data0.SubItems.Add(Convert.ToString(TA));
+                listView1.Items.Add(data0);
+                jumlahTA += TA;
     }
 }
