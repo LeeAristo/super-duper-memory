@@ -109,5 +109,17 @@ namespace Shortest_Job_First
                     selesai = LamaProses[q] + mulai;
                     tunggu = mulai - WaktuKedatangan[q];
                     TA = LamaProses[q] + tunggu;
+                    
+                    ListViewItem data = new ListViewItem(NamaProses[q]);
+                    data.SubItems.Add(Convert.ToString(WaktuKedatangan[q]));
+                    data.SubItems.Add(Convert.ToString(LamaProses[q]));
+                    data.SubItems.Add(Convert.ToString(mulai));
+                    data.SubItems.Add(Convert.ToString(selesai));
+                    data.SubItems.Add(Convert.ToString(tunggu));
+                    data.SubItems.Add(Convert.ToString(TA));
+                    listView1.Items.Add(data);
+                    jumlahTA += TA;
+
+                }
     }
 }
