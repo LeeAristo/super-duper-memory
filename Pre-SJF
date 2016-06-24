@@ -30,5 +30,13 @@ namespace Shortest_Job_First
         string[] NamaProses = new string[100];
         int[] WaktuKedatangan = new int[100];
         int[] LamaProses = new int[100];
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int jlhproses = 0;
+            jlhproses = Convert.ToInt32(textBox1.Text);
+
+            label3.Text = "Proses ke-1";
+        }
     }
 }
