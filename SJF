@@ -159,7 +159,6 @@ namespace Shortest_Job_First
                     textBox3.Hide();
                     textBox2.Hide();
                     button2.Hide();
-                    
                     rataTA = (float)jumlahTA / jlhproses;
                     label5.Text = "Rata-Rata TA = " + rataTA;
                 }
