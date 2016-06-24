@@ -98,5 +98,12 @@ namespace Shortest_Job_First
                 data0.SubItems.Add(Convert.ToString(TA));
                 listView1.Items.Add(data0);
                 jumlahTA += TA;
+                
+                for (int q = 1; q < jlhproses; q++)
+                {
+                    if (WaktuKedatangan[q] > mulai)
+                        mulai = WaktuKedatangan[q];
+                    else
+                        mulai = selesai;
     }
 }
