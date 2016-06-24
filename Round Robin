@@ -44,5 +44,20 @@ namespace Shortest_Job_First
         int[] WaktuKedatangan = new int[100];
         int[] LamaProses = new int[100];
         int quantum = 0;
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int jlhproses = 0;
+            jlhproses = Convert.ToInt32(textBox1.Text);
+
+            label3.Text = "Proses ke-1";
+
+            label1.Hide();
+            textBox1.Hide();
+            button1.Hide();
+            button4.Show();
+            label6.Show();
+            textBox4.Show();
+        }
     }
 }
